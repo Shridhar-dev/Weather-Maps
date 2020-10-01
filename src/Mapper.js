@@ -14,7 +14,7 @@ function Mapper(props) {
     const [tempmax_data, settempmaxdata] = useState()
     let maploaded=false
      useEffect( () => {
-         fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${mlat}&lon=${mlong}&appid=f4ee1f01c55829b264b1db85cdb36975`)
+         fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${mlat}&lon=${mlong}&appid=f4ee1f01c55829b264b1db85cdb36975`)
         .then(response=>{
             if(response.ok){
                 return response.json()
