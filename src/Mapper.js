@@ -74,5 +74,5 @@ function Mapper(props) {
 }
 
 export default GoogleApiWrapper({
-    apiKey: ('AIzaSyCA4-diR_wKMCIum2wlIQ9v8de7EnEm8ic')
+    apiKey: (`${process.env.REACT_APP_API_KEY}`)
 })(Mapper);
